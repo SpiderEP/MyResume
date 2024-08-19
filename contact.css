@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+    box-sizing: border-box;
+}
+
+.box {
+    background: rgb(255, 255, 255);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box a{
+    color: whitesmoke;
+}
+.contact-info {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    font-size: 0.8rem;
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 20px;
+}
+
+.card {
+    background: gray;
+    padding: 0 20px;
+    margin: 0 10px;
+    width: calc(33% - 20px);
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+    width: 300px;
+}
+.card-icon {
+    font-size: 28px;
+    background: #48C9B0;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px !important;
+    border-radius: 50%;
+    transition: 0.3s linear;
+}
+.card:hover .card-icon {
+    background: none;
+    color: #48C9B0;
+    transform: scale(1.6);
+}
+.card p {
+    margin-top: 20px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    max-height: 0;
+    opacity: 0;
+    transition: 0.3s linear;
+}
+.card:hover p{
+    max-height: 40px;
+    opacity: 1;
+}
+@media screen and (max-width:800px) {
+    .contact-info {
+        flex-direction: column;
+    }
+    .card {
+        width: 100%;
+        max-width: 300px;
+        margin: 10px 0;
+    }
+}
+main{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.logo-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    margin-bottom: 20px;
+}
